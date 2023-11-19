@@ -1,0 +1,8 @@
+
+.img
+{
+background-image:url("https://img.freepik.com/free-photo/summer-composition-with-palm-leave-copy-space_24837-307.jpg?w=900&t=st=1700137754~exp=1700138354~hmac=9e3e4d2f18c5e8144c305e5fa49250cfc03f2a114beba5d9eaa854b58d52a0f7");
+background-size:cover;
+min-height: 100vh;
+max-height: fit-content;
+}

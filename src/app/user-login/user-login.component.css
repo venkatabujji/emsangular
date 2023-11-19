@@ -1,0 +1,7 @@
+.image-container
+{
+    background-image:url("https://img.freepik.com/free-photo/business-people-meeting_53876-144829.jpg?size=626&ext=jpg&uid=R120267513&ga=GA1.2.505232574.1697028403&semt=sph");
+    background-size: cover;
+   min-height: 100vh;
+   max-height: fit-content;
+}

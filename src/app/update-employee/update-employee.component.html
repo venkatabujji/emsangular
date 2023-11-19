@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+  <a class="navbar-brand" href="#">EMS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      
+      <li class ="nv-item">
+        <a  [routerLink]="['/create-employee']" routerLinkActive="active" class ="nav-link"> Create Employee</a>
+      </li>
+      <li class ="nv-item">
+        <a  [routerLink]="['/employee-list']" routerLinkActive="active" class ="nav-link">Employee List</a>
+      </li>
+      <li class ="nv-item">
+        <a  [routerLink]="['/create-department']" routerLinkActive="active" class ="nav-link"> Create Department</a>
+      </li>
+      <li class ="nv-item">
+        <a  [routerLink]="['/department-list']" routerLinkActive="active" class ="nav-link">Department List</a>
+      </li>
+      
+      
+    </div>
+  </div>
+</nav>
+
+
+
+<form (ngSubmit)="onSubmit()" #myForm="ngForm">
+  
+      <div class="form-group">
+        {{employees.emp_id}}
+        <label for="emp_id">EmployeeId</label>
+        <input type="text" class="form-control" id="emp_id" [(ngModel)]="employees.emp_id" name="emp_id">
+    </div>
+  
+      <div class="form-group">
+        <label for="emp_name">EmployeeName</label>
+        <input type="text" class="form-control" id="emp_name" [(ngModel)]="employees.emp_name" name="emp_name">
+      </div>
+  
+    <div class="form-group">
+        <label for="emp_email">EmployeeEmail</label>
+        <input type="text" class="form-control" id="emp_email"  [(ngModel)]="employees.emp_email" name="emp_email">
+    </div>
+    <div class="form-group">
+        <label for="emp_phone_no">EmployeePhoneNo</label>
+        <input type="text" class="form-control" id="emp_phone_no"  [(ngModel)]="employees.emp_phone_no" name="emp_phone_no">
+    </div>
+    <div class="form-group">
+        <label for="gender">Gender</label>
+        <input type="text" class="form-control" id="gender"  [(ngModel)]="employees.gender" name="gender">
+    </div>
+    <div class="form-group">
+        <label for="salary">Salary</label>
+        <input type="text" class="form-control" id="salary" [(ngModel)]="employees.salary" name="salary" >
+    </div>
+     
+
+    <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

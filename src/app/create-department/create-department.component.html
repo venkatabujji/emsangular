@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <a class="navbar-brand" href="#">EMS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        
+        <li class ="nv-item">
+          <a  [routerLink]="['/create-employee']" routerLinkActive="active" class ="nav-link"> Create Employee</a>
+        </li>
+        <li class ="nv-item">
+          <a  [routerLink]="['/employee-list']" routerLinkActive="active" class ="nav-link">Employee List</a>
+        </li>
+        <li class ="nv-item">
+          <a  [routerLink]="['/create-department']" routerLinkActive="active" class ="nav-link"> Create Department</a>
+        </li>
+        <li class ="nv-item">
+          <a  [routerLink]="['/department-list']" routerLinkActive="active" class ="nav-link">Department List</a>
+        </li>
+        
+        
+      </div>
+    </div>
+    <button class="btn btn-danger" (click)="LogOut()" >LogOut</button>
+  </nav>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="img ">
+
+<div class="col-md-3 offset-md-3 ">
+<h1 >Create Department</h1>
+<form
+   (ngSubmit)="onSubmit()">
+    <div class="form-group">
+       
+        
+        <input type="text" class="form-control" id="dept_name" placeholder="Department Name" [(ngModel)]="department.dept_name"  name="dept_name">
+    </div>
+    <br/>
+    <button class="btn btn-success" type="submit">Submit</button>
+ 
+</form>
+</div>
+
+</div>

@@ -1,0 +1,7 @@
+.img
+{
+    background-image:url("https://img.freepik.com/premium-photo/laptop-table-with-city-background_902338-11699.jpg?w=900");
+    background-size: cover;
+   min-height: 100vh;
+   max-height: fit-content;
+}

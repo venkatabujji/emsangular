@@ -1,0 +1,7 @@
+.img
+{
+background-image:url("https://img.freepik.com/premium-photo/colorful-background-with-blue-pink-background_613001-5053.jpg?w=740");
+background-size:cover;
+min-height: 100vh;
+max-height: fit-content;
+}
